@@ -1,0 +1,8 @@
+
+# coding: utf-8
+
+# In[ ]:
+
+
+get_ipython().run_cell_magic('', 'time', 'def prime(x):\n    k = 0\n    for i in range (2,x):\n        if x%i == 0:\n            k+=1\n    if (k> 0 ):\n        f = False  # not prime\n    else:\n        f = True  # prime\n    return f\n\nq = 1\n\nfor i in range((int(600851475143**(1/2)) + 1),0,-1):\n    if prime(i) and 600851475143 % i==0:\n        print(i)\n        break')
+
